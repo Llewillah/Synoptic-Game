@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EventManager
+public static class EventManager
 {
     
 }
