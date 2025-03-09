@@ -1,12 +1,16 @@
+using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Grid
 {
+    Sprite[] sprites;
     private GridNode[,] gridArray;
     private float cellSize;
-    public Grid(int width, int height, float cellSize) 
+    public Grid(int width, int height, float cellSize, Sprite[] sprites) 
     {
         this.cellSize = cellSize;
+        this.sprites = sprites;
 
         gridArray = new GridNode[width, height];
 
@@ -15,7 +19,7 @@ public class Grid
         {
             for (int y = 0; y < gridArray.GetLength(1); y++)
             {
-                gridArray[x, y] = new GridNode(this, x, y);
+                gridArray[x, y] = new GridNode(this, x, y, SpawningManager.Instance.SpawnTile(GetWorldPos(x,y), cellSize), sprites[0]);
             }
         }
 
@@ -40,7 +44,12 @@ public class Grid
     private Vector3 GetWorldPos(int x, int y) 
     {
         //turns grid x,y into unity world x,y
-        return new Vector3(x, y) * cellSize;
+        return new Vector3(x , y) * cellSize;
+    }
+
+    public void DrawBuilding(Vector3 worldPos,Vector3 mousePos) 
+    {
+        
     }
 
 }

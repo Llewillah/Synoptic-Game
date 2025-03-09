@@ -6,8 +6,9 @@ public class GridInitialiser: MonoBehaviour
 
     [SerializeField] int gridX, gridY;
     [SerializeField] float cellSize;
+    [SerializeField] Sprite[] sprites;
     private void Start()
     {
-        grid = new Grid(gridX, gridY, cellSize);
+        grid = new Grid(gridX, gridY, cellSize, sprites);
     }
 }
