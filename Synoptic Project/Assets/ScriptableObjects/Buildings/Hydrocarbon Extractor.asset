@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26c0d9990df6f174bb6e9e81ab42074e, type: 3}
+  m_Name: Hydrocarbon Extractor
+  m_EditorClassIdentifier: 
+  buildingName: Hydrocarbon Extractor
+  sprite: {fileID: 0}
+  buildTime: 5
+  buildCost: 5
+  totalEmployees: 3
+  inputs: []
+  outputs:
+  - {fileID: 11400000, guid: 7ea477d352cf46c428833d698b13d9db, type: 2}
+  inputsCost: 
+  outputCount: 4
+  workTime: 6
+  warehouse: 0
+  globalOutput: 0
+  isTrader: 0
+  isHouse: 0

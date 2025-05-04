@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26c0d9990df6f174bb6e9e81ab42074e, type: 3}
+  m_Name: Electronics Manufactory
+  m_EditorClassIdentifier: 
+  buildingName: Electronics Factory
+  sprite: {fileID: 0}
+  buildTime: 5
+  buildCost: 50
+  totalEmployees: 3
+  inputs:
+  - {fileID: 11400000, guid: 1b826153e485d874e86d0c44cc7bc0d5, type: 2}
+  - {fileID: 11400000, guid: 18d6cd705dbb5ee4298258754e977651, type: 2}
+  outputs:
+  - {fileID: 11400000, guid: 2a5d3416bfa459349ac3fc47d9e5ec05, type: 2}
+  inputsCost: 0100000001000000
+  outputCount: 1
+  workTime: 6
+  warehouse: 0
+  globalOutput: 0
+  isTrader: 0
+  isHouse: 0
